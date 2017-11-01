@@ -81,3 +81,5 @@ Requirements:
   <pre>JAVA_OPTS="$JAVA_OPTS <b>-Dspring.profiles.active=prod</b>"</pre>
 5. Deploy the WAR file to Tomcat (or other web server).
 6. Go to `http://your-server-address/blog` (if deployed with default Tomcat settings) to see if it is working.
+
+If for debug, you can run `mvn tomcat7:run-war` to launch server without installing tomcat yourself. Of course, you need to launch mysql service yourself : )
