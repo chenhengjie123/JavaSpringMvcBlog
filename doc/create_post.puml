@@ -1,0 +1,12 @@
+@startuml
+actor user
+user->browser: 访问网页，点击创建按钮
+browser->PostsController: 发送 post 请求，调用 createPost
+PostsController->PostEditDto: 通过 createPost 校验参数合法性
+PostEditDto->PostsController: 返回校验结果至 result
+PostsController->PostsController: 判断参数是否合法
+PostsController->browser: 参数不合法，返回创建文章页
+PostsController->PostService: 调用 saveNewPost 保存数据
+PostService->PostRepository: 调用 saveAndFlush 保存数据至数据库
+PostsController->browser: 处理成功，返回文章列表页
+@enduml
