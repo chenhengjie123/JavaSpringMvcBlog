@@ -235,6 +235,13 @@
             <artifactId>json-path</artifactId>
             <version>2.0.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.tmall.doom</groupId>
+            <artifactId>doom-common-client</artifactId>
+            <version>3.3.7-SNAPSHOT</version>
+            <systemPath>${basedir}/libs/doom-common-client-3.3.7.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>
