@@ -12,6 +12,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring.version>4.1.6.RELEASE</spring.version>
         <spring.security.version>4.0.0.RELEASE</spring.security.version>
+        <basedir>/root/doom/JavaSpringMvcBlog</basedir>
     </properties>
 
     <dependencies>
@@ -241,6 +242,7 @@
             <artifactId>doom-common-client</artifactId>
             <version>3.3.7-SNAPSHOT</version>
             <systemPath>${basedir}/libs/doom-common-client-3.3.7.jar</systemPath>
+            <scope>system</scope>
         </dependency>
     </dependencies>
 
