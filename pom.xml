@@ -257,7 +257,7 @@
                 <version>2.2</version>
                 <configuration>
                     <path>/</path>
-                    <port>8081</port>
+                    <port>80</port>
                     <contextFile>src/main/webapp/WEB-INF/web.xml</contextFile>
                     <mode>context</mode>
                     <charset>UTF-8</charset>
