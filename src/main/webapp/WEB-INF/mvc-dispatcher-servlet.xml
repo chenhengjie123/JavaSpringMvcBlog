@@ -75,4 +75,7 @@
         <context:property-placeholder location="classpath:/uploading-test.properties"/>
     </beans>
 
+    <!--阿里双引擎 DOOM-->
+    <bean class="com.alibaba.doom.client.ClientInitialBean" lazy-init="false"/>
+
 </beans>
