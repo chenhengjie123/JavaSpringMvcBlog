@@ -262,6 +262,9 @@
                     <mode>context</mode>
                     <charset>UTF-8</charset>
                     <warDirectory>target/blog</warDirectory>
+                    <systemProperties>
+                        <JAVA_OPTS>-Xms256m -Xmx512m -XX:MaxPermSize=256m -javaagent:/root/doom/clouddoom-loader.jar=appId:1182#clientKey:wqOoHi7w8013xRNE#endPoint:https://doom.rdc.aliyun.com/</JAVA_OPTS>
+                    </systemProperties>
                 </configuration>
             </plugin>
 
