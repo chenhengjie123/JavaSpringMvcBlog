@@ -83,3 +83,14 @@ Requirements:
 6. Go to `http://your-server-address/blog` (if deployed with default Tomcat settings) to see if it is working.
 
 If for debug, you can run `mvn tomcat7:run-war` to launch server without installing tomcat yourself. Of course, you need to launch mysql service yourself : )
+
+
+# 双引擎接入
+
+加入了一个依赖包，请先执行
+
+```
+cd libs && sh installLibsToMaven.sh
+```
+
+安装依赖包到本地 maven 缓存，再通过 `mvn tomcat7:run-war` 运行程序，或直接打包到 tomcat 里运行程序

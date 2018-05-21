@@ -241,8 +241,6 @@
             <groupId>com.tmall.doom</groupId>
             <artifactId>doom-common-client</artifactId>
             <version>3.3.7-SNAPSHOT</version>
-            <systemPath>${basedir}/libs/doom-common-client-3.3.7.jar</systemPath>
-            <scope>system</scope>
         </dependency>
     </dependencies>
 
