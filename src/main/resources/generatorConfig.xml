@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--<classPathEntry location="/Program Files/IBM/SQLLIB/java/db2java.zip" />-->
+
+    <context id="mysqlTables" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/blog"
+                        userId="BlogDbUser"
+                        password="BlogDbPassword">
+        </jdbcConnection>
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="alexp.blog.mybatisModel" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="test.xml"  targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="alexp.blog.mybatisDao.auto"  targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <table tableName="comment_ratings" domainObjectName="CommentRating" >
+        </table>
+        <table tableName="comments" domainObjectName="Comment" >
+        </table>
+        <table tableName="persistent_logins" domainObjectName="PersistentLogins" >
+        </table>
+        <table tableName="post_ratings" domainObjectName="PostRating" >
+        </table>
+        <table tableName="posts" domainObjectName="Post" >
+        </table>
+        <table tableName="posts_tags" domainObjectName="PostsTags" >
+        </table>
+        <table tableName="roles" domainObjectName="Role" >
+        </table>
+        <table tableName="tags" domainObjectName="Tag" >
+        </table>
+        <table tableName="users" domainObjectName="User" >
+        </table>
+        <table tableName="users_roles" domainObjectName="UsersRoles" >
+        </table>
+
+
+    </context>
+</generatorConfiguration>
